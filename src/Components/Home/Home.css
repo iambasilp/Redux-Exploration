@@ -1,0 +1,133 @@
+.hero{
+    min-height:100vh;
+    background:linear-gradient(180deg, #ecf0f2 0%,#10095a22 40%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 9%;
+}
+.hero-left{
+    line-height: 1.1;
+}
+.hero-left h2{
+    color: #090909;
+    font-size: 18px;
+}
+
+.hero-left p{
+    color: #171717;
+    font-size: 60px;   
+    font-weight: 700;
+}
+.hero-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 250px;
+    height: 60px;
+    border-radius: 75px;
+    margin-top: 20px;
+    background: orangered;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: width 0.3s ease-in-out;
+    transition: all ease 0.3s   ;
+}
+.hero-latest-btn:hover{
+    background-color: rgb(9, 9, 186);
+    width: calc(250px + 30px);
+}
+
+.hero-latest-btn .hero-latest-btn-icon{
+    font-size: 18px;
+}
+
+.hero-right img {
+    max-width: 500px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@media(max-width:1200px){
+    
+    .hero{
+        padding: 10px 6%;
+        column-gap: 50px;
+    }
+    .hero-left p{
+        font-size: 70px;
+    }
+    .hero-right img{
+        width: 400px;
+    }
+   
+}
+@media(max-width:900px){
+   
+    .hero-left p{
+        font-size: 45px;
+    }
+    .hero-right img{
+        width: 350px;
+    }
+   
+}
+@media(max-width:700px){
+   .hero{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    row-gap: 40px;
+    min-height: calc(100vh - 140px);
+    text-align: center;
+    padding: 50px;
+   }
+   .hero-left{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    align-items: center;
+   }
+   
+   .hero-right{
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .hero-right img{
+    width: 300px;
+   }
+    .hero-left p{
+        font-size: 40px;
+    }
+    
+    .hero-left{
+        line-height: 1.2;
+    }
+    .hero-left h2{
+        margin-bottom: 20px;
+    }
+  
+    .hero-latest-btn{
+        margin-top: 30px;
+
+    }
+}

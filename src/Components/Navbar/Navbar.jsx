@@ -53,7 +53,7 @@ const Navbar = () => {
           >
             
             <Link to="/home">Home</Link>
-            {menu === "shop" ? <hr /> : <></>}
+            {menu === "home" ? <hr /> : <></>}
           </li>
           <li
             onClick={() => {
@@ -61,7 +61,7 @@ const Navbar = () => {
             }}
           >
             <Link to="/about">About</Link>
-            {menu === "livingroom" ? <hr /> : <></>}
+            {menu === "about" ? <hr /> : <></>}
           </li>
           <li
             onClick={() => {
